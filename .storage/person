@@ -1,0 +1,14 @@
+{
+    "data": {
+        "persons": [
+            {
+                "device_trackers": [],
+                "id": "124f206ac6a04b8ba1f91df659451b58",
+                "name": "SmartHome",
+                "user_id": "d6e552db4b394bb1b81c4cf7e12e2d56"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 1
+}

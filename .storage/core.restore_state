@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-05-31T04:01:20.008382+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "SmartHome",
+                    "id": "124f206ac6a04b8ba1f91df659451b58",
+                    "user_id": "d6e552db4b394bb1b81c4cf7e12e2d56"
+                },
+                "context": {
+                    "id": "9da684cc3e8f44838abadc907135ab2d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.smarthome",
+                "last_changed": "2019-05-30T19:00:42.623100+00:00",
+                "last_updated": "2019-05-30T19:00:44.768364+00:00",
+                "state": "unknown"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

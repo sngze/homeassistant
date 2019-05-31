@@ -1,0 +1,193 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "1b5b8564daab4685a6eb3d21aa2cc740",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "3a5355eabb044640b62c768bbf3a1d5d",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_kbyte/sec_sent"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM kbyte/sec sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "fb10ad03079a4cbbb046cae40b56efa2",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_packets/sec_sent"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM packets/sec sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9f12578ac8ca44ec87269d3b721fe319",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_packets_received"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM packets received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "2bb6ff33d5cb4f64bedce4c01396a2fc",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_kbyte/sec_received"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM kbyte/sec received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "f78d2b0dfabb4829a88d23dc735679ee",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_bytes_received"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM bytes received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a9bb022684f84277a6fe73deebac563c",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_packets_sent"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM packets sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "531e6ec2ea234cf4a9a643130ad8e945",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_packets/sec_received"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM packets/sec received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "209984cb8417489e9cccc43d1c7e48b0"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "babc120bf65d4280891378f87a1481f3",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-0060085db3f6_bytes_sent"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": null,
+                "name": "EFM Networks ipTIME N704BCM bytes sent",
+                "name_by_user": null,
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
