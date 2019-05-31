@@ -48,10 +48,6 @@ camera:
           mjpeg_url: http://192.168.0.7:8080/stream
           name: rpi camera
 
-api:
-        password: '0000'
-        services:
-                - service: playtest
 
 mqtt:
         broker: test.mosquitto.org
@@ -59,10 +55,3 @@ mqtt:
         password: 0000
         discovery: True
        
-
-
-esphomeyaml:
-        name: room
-        platform: ESP32
-        board: nodemcu-32s
-
