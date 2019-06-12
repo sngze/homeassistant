@@ -1,0 +1,24 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "broker": "192.168.219.200",
+                    "discovery": true,
+                    "password": "0000",
+                    "port": 1883,
+                    "username": "hass"
+                },
+                "domain": "mqtt",
+                "entry_id": "c39eddf823214a5e972d40bea1e0d5c3",
+                "options": {},
+                "source": "user",
+                "title": "192.168.219.200",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

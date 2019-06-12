@@ -1,0 +1,161 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.dht_sensor_temperature",
+                                    "name": "\uc628\ub3c4"
+                                },
+                                {
+                                    "entity": "sensor.dht_sensor_humidity",
+                                    "icon": "mdi:water",
+                                    "name": "\uc2b5\ub3c4"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "theme": "default",
+                            "title": "\ud658\uacbd",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.dht_sensor_temperature",
+                                    "name": "\uc628\ub3c4"
+                                },
+                                {
+                                    "entity": "sensor.dht_sensor_humidity",
+                                    "name": "\uc2b5\ub3c4"
+                                }
+                            ],
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.led"
+                                },
+                                {
+                                    "entity": "switch.door"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "\uc2a4\uc704\uce58",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.power",
+                                    "icon": "mdi:power"
+                                },
+                                {
+                                    "entity": "cover.channel",
+                                    "icon": "mdi:television-classic"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "theme": "Backend-selected",
+                            "title": "TV",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "camera.rpi_camera",
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "panel": false,
+                    "path": "home",
+                    "theme": "darkorange",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "script.1560174341221",
+                            "hold_action": {
+                                "action": "none"
+                            },
+                            "icon": "mdi:face-recognition",
+                            "icon_height": "100px",
+                            "name": "FaceID",
+                            "show_icon": true,
+                            "show_name": true,
+                            "tap_action": {
+                                "action": "call-service",
+                                "service": "shell_command.web_request"
+                            },
+                            "theme": "default",
+                            "type": "entity-button"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.face_check"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Face ID"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.dht_sensor_temperature",
+                                    "name": "\uc628\ub3c4"
+                                },
+                                {
+                                    "entity": "sensor.dht_sensor_humidity",
+                                    "icon": "mdi:water",
+                                    "name": "\uc2b5\ub3c4"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "theme": "default",
+                            "title": "DHT22",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.led"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "\uc2a4\uc704\uce58",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "automation.auto_light_on"
+                                },
+                                {
+                                    "entity": "automation.auto_light_off"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "theme": "default",
+                    "title": "test"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

@@ -1,0 +1,11 @@
+'1559903898420':
+  alias: Auto Open Close Door
+  sequence:
+  - service: shell_command.open_door
+  - delay: '3'
+  - service: shell_command.close_door
+'1560174341221':
+  alias: Face ID
+  sequence:
+  - data: {}
+    service: shell_command.web_request

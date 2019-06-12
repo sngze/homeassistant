@@ -1,0 +1,96 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 37.4388
+  longitude: 127.1396
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Asia/Seoul
+  # Customization file
+  customize: !include customize.yaml
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Discover some devices automatically
+discovery:
+
+# Sensors
+sensor:
+  - platform: dht
+    name: dht_sensor
+    sensor: DHT22
+    pin: 17
+    monitored_conditions:
+            - temperature
+            - humidity
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+frontend:
+        themes:
+                darkorange: !include themes/darkorange.yaml
+
+python_script:        
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+shell_command:
+        streaming_server_on: 'sudo service startMjpgServer restart'
+        web_request: 'python3 /home/homeassistant/.homeassistant/python_scripts/webrequest.py'
+        open_door: 'python /home/homeassistant/.homeassistant/python_scripts/open_door.py' 
+        close_door: 'python /home/homeassistant/.homeassistant/python_scripts/close_door.py'
+
+switch:
+        - platform: rpi_gpio
+          name: Switch
+          ports:
+                  18: LED
+                  23: Door
+          invert_logic: false
+        - platform: mqtt
+          name: Power
+          command_topic: "homeassistant/TV/set"
+          state_topic: "homeassistant/TV/set"
+          payload_on: 'ON'
+          payload_off: 'OFF'
+          state_on: 'ON'
+          state_off: 'OFF'
+          optimistic: false
+          qos: 0
+          retain: true
+
+cover:
+        - platform: mqtt
+          name: Channel
+          command_topic: "homeassistant/TV/set"
+          state_topic: "homeassistant/TV/set"
+          payload_open: 'ch_up'
+          payload_close: 'ch_down'
+          payload_stop: 'pause'
+          optimistic: false
+          qos: 0
+          retain: true
+
+camera:
+        - platform: mjpeg
+          mjpeg_url: http://192.168.219.200:8090/?action=stream
+          name: rpi camera
+
+input_boolean:
+        face_check:
+                name: Face ID Allow
+                initial: false
+                icon: mdi:face
+

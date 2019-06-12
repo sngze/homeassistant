@@ -1,0 +1,26 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.smarthome",
+                "name": null,
+                "platform": "person",
+                "unique_id": "f617615e411a445c95e62bcafd1760cb"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "292e3f4c52ab4f1c9347dcf97abf307a",
+                "disabled_by": null,
+                "entity_id": "switch.light",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "controlerswitchlight"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

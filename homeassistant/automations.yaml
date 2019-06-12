@@ -1,0 +1,82 @@
+- id: '1559901131038'
+  alias: Streaming Server Restart
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data: {}
+    service: shell_command.streaming_server_on
+- id: '1560150491966'
+  alias: Auto Light On
+  trigger:
+  - above: '27'
+    entity_id: sensor.dht_sensor_temperature
+    platform: numeric_state
+  condition:
+  - condition: state
+    entity_id: switch.led
+    state: 'off'
+  action:
+  - data: {}
+    service: switch.turn_on
+- id: '1560151400581'
+  alias: Auto Light Off
+  trigger:
+  - below: '27'
+    entity_id: sensor.dht_sensor_temperature
+    platform: numeric_state
+  condition:
+  - condition: state
+    entity_id: switch.led
+    state: 'on'
+  action:
+  - service: switch.turn_off
+- id: '1560173532350'
+  alias: Face ID Pass
+  trigger:
+  - payload: pass
+    platform: mqtt
+    topic: homeassistant/faceid
+  condition: []
+  action:
+  - alias: ''
+    data: {}
+    service: input_boolean.turn_on
+  - service: shell_command.open_door
+  - delay: '3'
+  - service: shell_command.close_door
+- id: '1560173674980'
+  alias: Face ID Fail
+  trigger:
+  - payload: fail
+    platform: mqtt
+    topic: homeassistant/faceid
+  condition: []
+  action:
+  - alias: ''
+    data: {}
+    service: input_boolean.turn_off
+- id: '1560267110173'
+  alias: Door Open
+  trigger:
+  - entity_id: switch.door
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - service: shell_command.open_door
+- id: '1560267864760'
+  alias: Close Door
+  trigger:
+  - entity_id: switch.door
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - alias: ''
+    data: {}
+    service: shell_command.close_door
+

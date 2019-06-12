@@ -1,0 +1,9 @@
+2019-06-12 17:31:03 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=177 from 2019-06-11 21:14:13.079570)
+2019-06-12 17:31:05 WARNING (MainThread) [homeassistant.helpers.config_validation] Your configuration contains extra keys that the platform does not support.
+Please remove [name].  (See /home/homeassistant/.homeassistant/configuration.yaml, line 55). 
+Offending data: {"ports": "<redacted>", "name": "Switch", "invert_logic": "<redacted>", "platform": "rpi_gpio"}
+2019-06-12 17:31:09 WARNING (MainThread) [homeassistant.components.mqtt.cover] Payload is not True or False: ON
+2019-06-12 17:31:09 WARNING (MainThread) [homeassistant.components.mqtt.cover] Payload is not True or False: ON
+2019-06-12 17:36:10 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `sudo service startMjpgServer restart`, return code: 1
+NoneType: None
+2019-06-12 17:38:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.dht_sensor_humidity is taking over 10 seconds

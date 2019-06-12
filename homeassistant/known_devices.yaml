@@ -1,0 +1,8 @@
+
+tester:
+  hide_if_away: false
+  icon:
+  mac:
+  name: tester
+  picture:
+  track: true

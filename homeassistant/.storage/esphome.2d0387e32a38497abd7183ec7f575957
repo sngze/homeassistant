@@ -1,0 +1,34 @@
+{
+    "data": {
+        "binary_sensor": [],
+        "camera": [],
+        "climate": [],
+        "cover": [],
+        "device_info": {
+            "compilation_time": "May 31 2019, 21:13:24",
+            "esphome_core_version": "1.10.1",
+            "has_deep_sleep": false,
+            "mac_address": "30:AE:A4:01:CF:0C",
+            "model": "NodeMCU-32S",
+            "name": "controler",
+            "uses_password": true
+        },
+        "fan": [],
+        "light": [],
+        "sensor": [],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 1935470627,
+                "name": "light",
+                "object_id": "light",
+                "unique_id": "controlerswitchlight"
+            }
+        ],
+        "text_sensor": []
+    },
+    "key": "esphome.2d0387e32a38497abd7183ec7f575957",
+    "version": 1
+}
